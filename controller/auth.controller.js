@@ -2,6 +2,7 @@ const asynceHandler = require("express-async-handler")
 const bcrypt = require("bcryptjs")
 const User = require("../modals/User")
 const jwt = require("jsonwebtoken")
+const { checkEmpty } = require("../utils/CheckEmpty")
 
 //delete this function
 exports.registerUser = asynceHandler(async (req, res) => {
